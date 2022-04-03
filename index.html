@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator App</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"></div>
+    </header>
+    <main>
+        <div class="bill">
+            <label for="bill">Bill</label>
+            <input class="bill_total" id="bill" name="bill" type="number" min="0.01" max="99999">
+        </div>
+        <div class="tip">
+            <p>Select Tip %</p>
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <input type="number" class="custom_button" placeholder="Custom" min="1" max="100">
+        </div>
+        <div class="people">
+            <label for="people">Number of People</label>
+            <input class="people_total" id="people" name="people" people type="number" min="1" max="99">
+        </div>
+        <div class="summary">
+            <div class="summary_row">
+                <p>Tip Amount</p>
+                <p class="person">/ person</p>
+                <h2>$0.00</h2>
+            </div>
+            <div class="summary_row">
+                <p>Total</p>
+                <p class="person">/ person</p>
+                <h2>$0.00</h2>
+            </div>
+            <button class="reset">reset</button>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    color: hsl(186, 14%, 43%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+body {
+    margin: 0 auto;
+    width: 375px;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.logo {
+    margin: 50px auto;
+    height: 54px;
+    width: 87px;
+    background-image: url(images/logo.svg);
+    background-repeat: no-repeat;
+}
+
+main {
+    margin: 0;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.bill {
+    margin: 0px;
+}
+
+p,
+label {
+    font-size: 16px;
+}
+
+input {
+    border-radius: 5px;
+}
+
+.bill_total {
+    height: 50px;
+    width: 325px;
+    background: url(images/icon-dollar.svg) no-repeat scroll 10px 15px;
+    padding: 0 10px 0 30px;
+    background-color: #F3F8FA;
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+}
+
+button {
+    margin: 5px 0;
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: hsl(183, 100%, 15%);
+}
+
+.custom_button {
+    height: 40px;
+    width: 150px;
+    padding-right: 10px;
+    display: inline-block;
+    text-align: right;
+}
+
+.people_total {
+    height: 50px;
+    width: 325px;
+    background: url(images/icon-person.svg) no-repeat scroll 10px 15px;
+    padding: 0 10px 0 30px;
+    background-color: #F3F8FA;
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+}
+
+.reset {
+    margin-top: 20px;
+    width: 285px;
+    color: hsl(183, 100%, 15%);
+    background-color: #27C2AE;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.summary {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 15px;
+}
+
+.summary_row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "text summary""person summary";
+}
+
+.summary p {
+    color: white;
+}
+
+p.person {
+    color: #7AA2AA;
+}
+
+.summary h2 {
+    color: #27C2AE;
+    grid-area: summary;
+    justify-self: end;
+    align-self: center;
+}
