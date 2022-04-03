@@ -20,20 +20,21 @@
     <main>
         <div class="bill">
             <label for="bill">Bill</label>
-            <input class="bill_total" id="bill" name="bill" type="number" min="0.01" max="99999">
+            <input class="bill_total" id="bill" name="bill" type="number" placeholder="0">
         </div>
         <div class="tip">
             <p>Select Tip %</p>
-            <button class="btn_5">5%</button>
-            <button class="btn_10">10%</button>
-            <button class="btn_15">15%</button>
-            <button class="btn_25">25%</button>
-            <button class="btn_50">50%</button>
+            <button class="btn_5" data-tip="0.05">5%</button>
+            <button class="btn_10" data-tip="0.10">10%</button>
+            <button class="btn_15" data-tip="0.15">15%</button>
+            <button class="btn_25" data-tip="0.25">25%</button>
+            <button class="btn_50" data-tip="0.50">50%</button>
             <input type="number" class="custom_button" placeholder="Custom" min="1" max="100">
         </div>
         <div class="people">
             <label for="people">Number of People</label>
-            <input class="people_total" id="people" name="people" people type="number" min="1" max="99">
+            <span class="error_span"></span>
+            <input class="people_total" id="people" name="people" people type="number" placeholder="0">
         </div>
         <div class="summary">
             <div class="summary_row">
@@ -46,7 +47,7 @@
                 <p class="person">/ person</p>
                 <h2 class="summary_total">$0.00</h2>
             </div>
-            <button class="reset">reset</button>
+            <button class="reset unactive">reset</button>
         </div>
     </main>
     <script src="main.js"></script>

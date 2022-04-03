@@ -52,6 +52,19 @@ input {
     border-radius: 5px;
 }
 
+input.error {
+    outline-style: solid;
+    outline-color: #A26651;
+    -moz-outline-color: #A26651;
+    border: 0 none;
+}
+
+.error_span {
+    padding-left: 25px;
+    font-size: 16px;
+    color: #A26651;
+}
+
 input:focus {
     outline-style: solid;
     outline-color: #329788;
@@ -80,6 +93,16 @@ button {
     cursor: pointer;
 }
 
+.active {
+    color: hsl(183, 100%, 15%);
+    background-color: #329788;
+}
+
+button:hover {
+    color: hsl(183, 100%, 15%);
+    background-color: #9EE8DF;
+}
+
 .custom_button {
     height: 40px;
     width: 150px;
@@ -105,6 +128,11 @@ button {
     background-color: #27C2AE;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.reset.unactive {
+    pointer-events: none;
+    background-color: #0C676D;
 }
 
 .summary {
