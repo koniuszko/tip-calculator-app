@@ -163,3 +163,66 @@ p.person {
     justify-self: end;
     align-self: center;
 }
+
+@media(min-width:1440px) {
+
+
+    body {
+        width: 800px;
+    }
+
+    main {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-areas: "bill summary""tip summary""people summary";
+    }
+
+    .bill {
+        padding-left: 20px;
+        grid-area: bill;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .tip {
+        margin-top: 10px;
+        padding-left: 20px;
+        grid-area: tip;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .tip button {
+        width: 100px;
+    }
+
+    .custom_button {
+        width: 100px;
+        font-size: 22px;
+    }
+
+    .people {
+        padding-left: 20px;
+        grid-area: people;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .summary {
+        margin: 0;
+        grid-area: summary;
+        align-self: stretch;
+        justify-self: center;
+    }
+
+    .summary_row {
+        margin-top: 25px;
+    }
+
+    .reset {
+        margin-top: 110px;
+    }
+
+}
